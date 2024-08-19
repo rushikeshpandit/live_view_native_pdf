@@ -22,6 +22,8 @@ config :live_view_native_pdf, LiveViewNativePdfWeb.Endpoint,
   pubsub_server: LiveViewNativePdf.PubSub,
   live_view: [signing_salt: "RIsvuux6"]
 
+  config :live_view_native_pdf, :upload_dir, Path.expand("../priv/uploads", __DIR__)
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails

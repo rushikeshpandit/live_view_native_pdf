@@ -17,7 +17,7 @@ defmodule LiveViewNativePdfWeb.Router do
   scope "/", LiveViewNativePdfWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", PdfLive.ShowItem, :show
   end
 
   # Other scopes may use custom stacks.
