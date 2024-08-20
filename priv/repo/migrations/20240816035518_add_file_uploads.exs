@@ -2,19 +2,11 @@ defmodule Purple.Repo.Migrations.AddFileUploads do
   use Ecto.Migration
 
   def change do
-    create table(:file_uploads) do
-      add :path, :string, null: false
-      add :extension, :string, null: false, size: 16
-      add :byte_size, :bigint, null: false
-      add :sha_hash, :binary, null: false
-      add :description, :text, null: false, default: ""
-      add :image_width, :int
-      add :image_height, :int
+    create table(:products, primary_key: false) do
+      add :id, :binary_id, primary_key: true
+      add :image_url, :string
 
       timestamps()
     end
-
-    create unique_index(:file_uploads, [:path, :extension])
-    create unique_index(:file_uploads, [:sha_hash])
   end
 end
