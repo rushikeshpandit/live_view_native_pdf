@@ -11,6 +11,12 @@ config :live_view_native_pdf,
   ecto_repos: [LiveViewNativePdf.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+config :waffle,
+  storage: Waffle.Storage.Local,
+  # Edit this path to match your storage directory
+  storage_dir_prefix: "priv/static",
+  storage_dir: "upload_file"
+
 # Configures the endpoint
 config :live_view_native_pdf, LiveViewNativePdfWeb.Endpoint,
   url: [host: "localhost"],
@@ -22,7 +28,7 @@ config :live_view_native_pdf, LiveViewNativePdfWeb.Endpoint,
   pubsub_server: LiveViewNativePdf.PubSub,
   live_view: [signing_salt: "RIsvuux6"]
 
-  config :live_view_native_pdf, :upload_dir, Path.expand("../priv/uploads", __DIR__)
+config :live_view_native_pdf, :upload_dir, Path.expand("../priv/uploads", __DIR__)
 
 # Configures the mailer
 #
