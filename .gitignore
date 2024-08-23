@@ -36,3 +36,5 @@ npm-debug.log
 /assets/node_modules/
 
 mix.lock
+
+priv/static/upload_file
