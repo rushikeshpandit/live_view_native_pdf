@@ -12,7 +12,12 @@
   <:item title="Title"><%= @post.title %></:item>
   <:item title="File URL">
     <!-- Display the Post image using the Waffle URL -->
-    <img src={@post_file_url} />
+    <div class="flex justify-between w-full mt-2">
+      <.button class="js-prev" type="button">Prev</.button>
+      <input class="js-zoom" type="range" value="1.5" min="0" max="2" step=".1" />
+      <.button class="js-next" type="button">Next</.button>
+    </div>
+    <canvas class="mt-1" phx-hook="PDF" id="pdf-canvas" data-path={@post_file_url}></canvas>
   </:item>
 </.list>
 
@@ -28,3 +33,5 @@
     patch={~p"/posts/#{@post}"}
   />
 </.modal>
+<script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module">
+</script>
