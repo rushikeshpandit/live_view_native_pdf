@@ -5,8 +5,8 @@ defmodule LiveViewNativePdf.Uploaders.FileUploaders do
   @allowed_extensions ~w(.pdf)
 
   def filename(version, {file, post}) do
-    # It is desirable for this name to be unique
-    "#{file.file_name}_#{post.title}_#{version}.#{file.file_name |> Path.extname() |> String.downcase()}"
+    file_name = Path.basename(file.file_name, Path.extname(file.file_name))
+    "_#{version}_#{file_name}"
   end
 
   def validate(_version, {file, _scope}) do
