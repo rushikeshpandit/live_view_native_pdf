@@ -674,15 +674,4 @@ defmodule LiveViewNativePdfWeb.CoreComponents do
   def translate_errors(errors, field) when is_list(errors) do
     for {^field, {msg, opts}} <- errors, do: translate_error({msg, opts})
   end
-
-  def render_file_ref(assigns) do
-    ~H"""
-    <div class="flex justify-between w-full mt-2">
-      <.button class="js-prev" type="button">Prev</.button>
-      <input class="js-zoom" type="range" value="1.5" min="0" max="2" step=".1" />
-      <.button class="js-next" type="button">Next</.button>
-    </div>
-    <canvas class="mt-1" phx-hook="PDF" id="pdf-canvas" data-path={~p"/"}></canvas>
-    """
-  end
 end
