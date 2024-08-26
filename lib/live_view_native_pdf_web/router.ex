@@ -22,7 +22,7 @@ defmodule LiveViewNativePdfWeb.Router do
   scope "/", LiveViewNativePdfWeb do
     pipe_through :browser
 
-    live "/", ShowLive.Index
+    live "/", ShowLive.IndexLive
   end
 
   # Other scopes may use custom stacks.
