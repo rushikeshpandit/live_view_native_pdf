@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00078D5C7ADF306EAEC204D1 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED531639A801A57912586DFE /* ConnectingView.swift */; };
+		0368B3D39DF31F3EB6A0ED02 /* DisconnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A02C0580F3D0B244E4B1B1 /* DisconnectedView.swift */; };
+		12DCCE0D7FB85D8499AE7E63 /* LiveViewNativeLiveForm in Frameworks */ = {isa = PBXBuildFile; productRef = A6C116CDEB747F9375E75A4A /* LiveViewNativeLiveForm */; };
+		278401D9E3807DE5F82052F3 /* LiveViewNativePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6902D2DCF23311337EBD5DA /* LiveViewNativePdf.swift */; };
+		30A5B4F8E3591F87BC96F8A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A4B63A3772A38A0A07E1E0 /* Assets.xcassets */; };
+		33B8ECF3AC561FFE498A06AF /* ReconnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E268499F232EA9A51D3E780 /* ReconnectingView.swift */; };
+		575F94019B8ECD972562BA0A /* LiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = 001930E5F8535BEB52B60A58 /* LiveViewNative */; };
+		59EC2D873AF4BB3EEF13C63A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E95E9B4EB552A9C3D7A115 /* ErrorView.swift */; };
+		5C6DDC7210C5EFAC04F20793 /* ConnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED531639A801A57912586DFE /* ConnectingView.swift */; };
+		70BA7BD14114C9B0BED8ADDF /* LiveViewNative in Frameworks */ = {isa = PBXBuildFile; productRef = A68F8FD16CBA0B9A1051008D /* LiveViewNative */; };
+		89F73867561C1DDAA6422F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A4B63A3772A38A0A07E1E0 /* Assets.xcassets */; };
+		95E5B1EA57137E1A50B0095D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF71E4B39F1DE8DEBA3E0C9A /* Preview Assets.xcassets */; };
+		A1A2243C4CF4DEF641FFD613 /* LiveViewNativeLiveForm in Frameworks */ = {isa = PBXBuildFile; productRef = 819A142F6E42AAB727953EBD /* LiveViewNativeLiveForm */; };
+		C5686E22C71F914487920898 /* DisconnectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A02C0580F3D0B244E4B1B1 /* DisconnectedView.swift */; };
+		C97C9654DC37F8F29A2AE433 /* LiveViewNativePdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6902D2DCF23311337EBD5DA /* LiveViewNativePdf.swift */; };
+		CDA0C4B93FF0AB73FFE63F8D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E95E9B4EB552A9C3D7A115 /* ErrorView.swift */; };
+		E49B0905606DE0BA2F9B001D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F44E21F84E063B7262DDFA /* ContentView.swift */; };
+		EC21D62355C6B38C71D883DA /* ReconnectingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E268499F232EA9A51D3E780 /* ReconnectingView.swift */; };
+		FC6B68606138CF3CABBE4326 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF71E4B39F1DE8DEBA3E0C9A /* Preview Assets.xcassets */; };
+		FE592701F4E81AE0CFD28BFF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F44E21F84E063B7262DDFA /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06A02C0580F3D0B244E4B1B1 /* DisconnectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisconnectedView.swift; sourceTree = "<group>"; };
+		2148EF7BB83A1EEB87D173B4 /* LiveViewNativePdf Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LiveViewNativePdf Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E268499F232EA9A51D3E780 /* ReconnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReconnectingView.swift; sourceTree = "<group>"; };
+		79F44E21F84E063B7262DDFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		94E95E9B4EB552A9C3D7A115 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		A8A4B63A3772A38A0A07E1E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF04EA9D30E1B04AE0810E32 /* LiveViewNativePdf.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = LiveViewNativePdf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6902D2DCF23311337EBD5DA /* LiveViewNativePdf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewNativePdf.swift; sourceTree = "<group>"; };
+		ED531639A801A57912586DFE /* ConnectingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectingView.swift; sourceTree = "<group>"; };
+		EF71E4B39F1DE8DEBA3E0C9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		697146E4D1BB2F8CF4876592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70BA7BD14114C9B0BED8ADDF /* LiveViewNative in Frameworks */,
+				A1A2243C4CF4DEF641FFD613 /* LiveViewNativeLiveForm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F54D331F863A3030F5033782 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				575F94019B8ECD972562BA0A /* LiveViewNative in Frameworks */,
+				12DCCE0D7FB85D8499AE7E63 /* LiveViewNativeLiveForm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E9273060C440C92E1903499 /* LiveViewNativePdf */ = {
+			isa = PBXGroup;
+			children = (
+				D27D139E6966EC2CE6D075D6 /* Preview Content */,
+				A8A4B63A3772A38A0A07E1E0 /* Assets.xcassets */,
+				ED531639A801A57912586DFE /* ConnectingView.swift */,
+				79F44E21F84E063B7262DDFA /* ContentView.swift */,
+				06A02C0580F3D0B244E4B1B1 /* DisconnectedView.swift */,
+				94E95E9B4EB552A9C3D7A115 /* ErrorView.swift */,
+				C6902D2DCF23311337EBD5DA /* LiveViewNativePdf.swift */,
+				4E268499F232EA9A51D3E780 /* ReconnectingView.swift */,
+			);
+			path = LiveViewNativePdf;
+			sourceTree = "<group>";
+		};
+		990133FC1F859ACA335CD1C9 = {
+			isa = PBXGroup;
+			children = (
+				8E9273060C440C92E1903499 /* LiveViewNativePdf */,
+				DB16DDFA14251004CFDACFC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D27D139E6966EC2CE6D075D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EF71E4B39F1DE8DEBA3E0C9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DB16DDFA14251004CFDACFC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2148EF7BB83A1EEB87D173B4 /* LiveViewNativePdf Watch App.app */,
+				AF04EA9D30E1B04AE0810E32 /* LiveViewNativePdf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FBE026EAD63828AAC46E3E8 /* LiveViewNativePdf Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F3AEE7A5F05C66B7002A339 /* Build configuration list for PBXNativeTarget "LiveViewNativePdf Watch App" */;
+			buildPhases = (
+				737708A30410756B1A1D084C /* Sources */,
+				9FDF8184C6FE03CE3D9478C8 /* Resources */,
+				697146E4D1BB2F8CF4876592 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LiveViewNativePdf Watch App";
+			packageProductDependencies = (
+				A68F8FD16CBA0B9A1051008D /* LiveViewNative */,
+				819A142F6E42AAB727953EBD /* LiveViewNativeLiveForm */,
+			);
+			productName = "LiveViewNativePdf Watch App";
+			productReference = 2148EF7BB83A1EEB87D173B4 /* LiveViewNativePdf Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D876048B40A64AADA0E8FCF9 /* LiveViewNativePdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFC0997FEB2A8159C5CF0C1C /* Build configuration list for PBXNativeTarget "LiveViewNativePdf" */;
+			buildPhases = (
+				6971EA991711005DCA8F2C1E /* Sources */,
+				E8CF0DDC74267839D1A10EA0 /* Resources */,
+				F54D331F863A3030F5033782 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveViewNativePdf;
+			packageProductDependencies = (
+				001930E5F8535BEB52B60A58 /* LiveViewNative */,
+				A6C116CDEB747F9375E75A4A /* LiveViewNativeLiveForm */,
+			);
+			productName = LiveViewNativePdf;
+			productReference = AF04EA9D30E1B04AE0810E32 /* LiveViewNativePdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE4BB239C1757704139FCC26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 5AC84C791A48FE0D553D55E6 /* Build configuration list for PBXProject "LiveViewNativePdf" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 990133FC1F859ACA335CD1C9;
+			packageReferences = (
+				F636024725F42B5EC8AEEC91 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */,
+				027DD717AC48767760BE5297 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */,
+			);
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D876048B40A64AADA0E8FCF9 /* LiveViewNativePdf */,
+				8FBE026EAD63828AAC46E3E8 /* LiveViewNativePdf Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9FDF8184C6FE03CE3D9478C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F73867561C1DDAA6422F5C /* Assets.xcassets in Resources */,
+				95E5B1EA57137E1A50B0095D /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8CF0DDC74267839D1A10EA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A5B4F8E3591F87BC96F8A7 /* Assets.xcassets in Resources */,
+				FC6B68606138CF3CABBE4326 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6971EA991711005DCA8F2C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6DDC7210C5EFAC04F20793 /* ConnectingView.swift in Sources */,
+				FE592701F4E81AE0CFD28BFF /* ContentView.swift in Sources */,
+				0368B3D39DF31F3EB6A0ED02 /* DisconnectedView.swift in Sources */,
+				59EC2D873AF4BB3EEF13C63A /* ErrorView.swift in Sources */,
+				C97C9654DC37F8F29A2AE433 /* LiveViewNativePdf.swift in Sources */,
+				33B8ECF3AC561FFE498A06AF /* ReconnectingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737708A30410756B1A1D084C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00078D5C7ADF306EAEC204D1 /* ConnectingView.swift in Sources */,
+				E49B0905606DE0BA2F9B001D /* ContentView.swift in Sources */,
+				C5686E22C71F914487920898 /* DisconnectedView.swift in Sources */,
+				CDA0C4B93FF0AB73FFE63F8D /* ErrorView.swift in Sources */,
+				278401D9E3807DE5F82052F3 /* LiveViewNativePdf.swift in Sources */,
+				EC21D62355C6B38C71D883DA /* ReconnectingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		02F3B86CEEFC731F149BCEAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiveViewNativePdf.watchkit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		33D521B929A96D3D42E63396 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiveViewNativePdf;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Debug;
+		};
+		5D24276801FE9B4A15C073A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveViewNativePdf;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.LiveViewNativePdf;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		69E6FD8895DC3CF651205242 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveViewNativePdf;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.example.LiveViewNativePdf;
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		6E364A62DCD53B1EDC4AF879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiveViewNativePdf;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator appletvos appletvsimulator macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
+			};
+			name = Release;
+		};
+		8496791046B9FEF8E1AA42E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.LiveViewNativePdf.watchkit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5AC84C791A48FE0D553D55E6 /* Build configuration list for PBXProject "LiveViewNativePdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D24276801FE9B4A15C073A1 /* Debug */,
+				69E6FD8895DC3CF651205242 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9F3AEE7A5F05C66B7002A339 /* Build configuration list for PBXNativeTarget "LiveViewNativePdf Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02F3B86CEEFC731F149BCEAA /* Debug */,
+				8496791046B9FEF8E1AA42E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AFC0997FEB2A8159C5CF0C1C /* Build configuration list for PBXNativeTarget "LiveViewNativePdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33D521B929A96D3D42E63396 /* Debug */,
+				6E364A62DCD53B1EDC4AF879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		027DD717AC48767760BE5297 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/liveview-native/liveview-native-live-form";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		F636024725F42B5EC8AEEC91 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/liveview-native/liveview-client-swiftui";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		001930E5F8535BEB52B60A58 /* LiveViewNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F636024725F42B5EC8AEEC91 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */;
+			productName = LiveViewNative;
+		};
+		819A142F6E42AAB727953EBD /* LiveViewNativeLiveForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027DD717AC48767760BE5297 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */;
+			productName = LiveViewNativeLiveForm;
+		};
+		A68F8FD16CBA0B9A1051008D /* LiveViewNative */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F636024725F42B5EC8AEEC91 /* XCRemoteSwiftPackageReference "liveview-client-swiftui" */;
+			productName = LiveViewNative;
+		};
+		A6C116CDEB747F9375E75A4A /* LiveViewNativeLiveForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 027DD717AC48767760BE5297 /* XCRemoteSwiftPackageReference "liveview-native-live-form" */;
+			productName = LiveViewNativeLiveForm;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AE4BB239C1757704139FCC26 /* Project object */;
+}
