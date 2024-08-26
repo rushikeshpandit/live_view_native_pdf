@@ -1,5 +1,5 @@
 function renderPDF(canvas) {
-	const path = canvas.dataset.path;
+	const path = "/upload_file/" + canvas.dataset.path;
 	var { pdfjsLib } = globalThis;
 
 	// The workerSrc property shall be specified.
