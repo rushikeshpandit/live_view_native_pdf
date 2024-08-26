@@ -11,12 +11,6 @@ config :live_view_native_pdf,
   ecto_repos: [LiveViewNativePdf.Repo],
   generators: [timestamp_type: :utc_datetime]
 
-config :waffle,
-  storage: Waffle.Storage.Local,
-  # Edit this path to match your storage directory
-  storage_dir_prefix: "priv/static",
-  storage_dir: "upload_file"
-
 # Configures the endpoint
 config :live_view_native_pdf, LiveViewNativePdfWeb.Endpoint,
   url: [host: "localhost"],
@@ -69,22 +63,19 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
-config :phoenix_template, :format_encoders, [
-  swiftui: Phoenix.HTML.Engine
-]
+config :phoenix_template, :format_encoders, swiftui: Phoenix.HTML.Engine
 
 config :mime, :types, %{
   "text/styles" => ["styles"],
   "text/swiftui" => ["swiftui"]
 }
 
-config :live_view_native, plugins: [
-  LiveViewNative.SwiftUI
-]
+config :live_view_native,
+  plugins: [
+    LiveViewNative.SwiftUI
+  ]
 
-config :phoenix, :template_engines, [
-  neex: LiveViewNative.Engine
-]
+config :phoenix, :template_engines, neex: LiveViewNative.Engine
 
 config :live_view_native_stylesheet,
   content: [
