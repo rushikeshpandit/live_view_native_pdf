@@ -34,13 +34,32 @@ let liveSocket = new LiveSocket("/live", Socket, {
 topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
 window.addEventListener("phx:page-loading-start", _info => topbar.show(300))
 window.addEventListener("phx:page-loading-stop", _info => topbar.hide())
-window.addEventListener("phx:prev", (e) => {
-  console.log("🚀 ~ _info previous_page:", e)
-  // Hooks.PDF.onPrevPage()
+
+window.addEventListener("phx:prev", event => {
+  console.log("🚀 ~ _info phx:prev previous_page:", event)
 })
-window.addEventListener("phx:next", (e) => {
-  console.log("🚀 ~ _info next_page:", e)
-  // Hooks.PDF.onNextPage()
+window.addEventListener("phx:next", event => {
+  console.log("🚀 ~ _info phx:next next_page:", event)
+})
+window.addEventListener("phx:previous_page", event => {
+  console.log("🚀 ~ _info phx:previous_page previous_page:", event)
+})
+window.addEventListener("phx:next_page", event => {
+  console.log("🚀 ~ _info phx:next_page next_page:", event)
+})
+
+
+window.addEventListener("prev", event => {
+  console.log("🚀 ~ _info prev previous_page:", event)
+})
+window.addEventListener("next", event => {
+  console.log("🚀 ~ _info next next_page:", event)
+})
+window.addEventListener("previous_page", event => {
+  console.log("🚀 ~ _info previous_page previous_page:", event)
+})
+window.addEventListener("next_page", event => {
+  console.log("🚀 ~ _info next_page next_page:", event)
 })
 
 

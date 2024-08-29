@@ -2,7 +2,7 @@ defmodule LiveViewNativePdfWeb.ShowLive.IndexLive do
   use LiveViewNativePdfWeb, :live_view
   use LiveViewNativePdfNative, :live_view
 
-  @impl Phoenix.LiveView
+  @impl true
   def mount(_params, _session, socket) do
     {:ok,
      socket
@@ -10,17 +10,17 @@ defmodule LiveViewNativePdfWeb.ShowLive.IndexLive do
      |> allow_upload(:file_url, accept: ~w(.pdf), max_entries: 1)}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("validate", _params, socket) do
     {:noreply, socket}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("cancel-upload", %{"ref" => ref}, socket) do
     {:noreply, cancel_upload(socket, :file_url, ref)}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("save", _params, socket) do
     uploaded_files =
       consume_uploaded_entries(socket, :file_url, fn %{path: path}, entry ->
@@ -44,19 +44,19 @@ defmodule LiveViewNativePdfWeb.ShowLive.IndexLive do
     {:noreply, socket}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("previous_page", _param, socket) do
     IO.inspect("previous_page")
-    {:noreply, push_event(socket, "prev", %{event: "prev"})}
+    {:noreply, push_event(socket, :prev, %{})}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def handle_event("next_page", _param, socket) do
     IO.inspect("next_page")
-    {:noreply, push_event(socket, "next", %{event: "next"})}
+    {:noreply, push_event(socket, :next, %{})}
   end
 
-  @impl Phoenix.LiveView
+  @impl true
   def render(assigns) do
     ~H"""
     <form id="upload-form" phx-submit="save" phx-change="validate">
@@ -71,7 +71,7 @@ defmodule LiveViewNativePdfWeb.ShowLive.IndexLive do
       </div>
       <canvas class="mt-1" phx-hook="PDF" id="pdf-canvas" data-path={@uploaded_files}></canvas>
     </div>
-    <script src="//mozilla.github.io/pdf.js/build/pdf.mjs" type="module">
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.mjs" type="module">
     </script>
     """
   end

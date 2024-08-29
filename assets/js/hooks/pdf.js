@@ -74,21 +74,60 @@ const renderPDF = async (canvas) => {
 
 export default {
 	mounted() {
+		console.log("🚀 ~ mounted ~ this:", this)
 		renderPDF(this.el);
-		this.handleEvent("next", ({ points }) => {
-			console.log("🚀 ~ mounted ~next points:", points);
+		this.handleEvent("next", (data) => {
+			console.log("🚀 ~ mounted ~next data:", data);
 		});
-		this.handleEvent("prev", ({ points }) => {
-			console.log("🚀 ~ mounted ~next points:", points);
+		this.handleEvent("prev", (data) => {
+			console.log("🚀 ~ mounted ~next data:", data);
+		});
+		this.handleEvent("next_page", (data) => {
+			console.log("🚀 ~ mounted ~next_page data:", data);
+		});
+		this.handleEvent("previous_page", (data) => {
+			console.log("🚀 ~ mounted ~previous_page data:", data);
+		});
+
+		this.handleEvent("phx:next", (data) => {
+			console.log("🚀 ~ mounted ~phx:next data:", data);
+		});
+		this.handleEvent("phx:prev", (data) => {
+			console.log("🚀 ~ mounted ~phx:next data:", data);
+		});
+		this.handleEvent("phx:next_page", (data) => {
+			console.log("🚀 ~ mounted ~phx:next_page data:", data);
+		});
+		this.handleEvent("phx:previous_page", (data) => {
+			console.log("🚀 ~ mounted ~phx:previous_page data:", data);
 		});
 	},
 	updated() {
+		console.log("🚀 ~ updated ~ this:", this)
 		renderPDF(this.el);
-		this.handleEvent("next", ({ points }) => {
-			console.log("🚀 ~ mounted ~updated points:", points);
+		this.handleEvent("next", (data) => {
+			console.log("🚀 ~ updated ~updated data:", data);
 		});
-		this.handleEvent("prev", ({ points }) => {
-			console.log("🚀 ~ mounted ~updated points:", points);
+		this.handleEvent("prev", (data) => {
+			console.log("🚀 ~ updated ~updated data:", data);
+		});
+		this.handleEvent("next_page", (data) => {
+			console.log("🚀 ~ updated ~updatednext_page data:", data);
+		});
+		this.handleEvent("previous_page", (data) => {
+			console.log("🚀 ~ updated ~updated previous_page data:", data);
+		});
+		this.handleEvent("phx:next", (data) => {
+			console.log("🚀 ~ updated ~phx:next data:", data);
+		});
+		this.handleEvent("phx:previous_page", (data) => {
+			console.log("🚀 ~ updated ~phx:previous_page data:", data);
+		});
+		this.handleEvent("phx:next_page", (data) => {
+			console.log("🚀 ~ updated ~phx:next_page data:", data);
+		});
+		this.handleEvent("phx:prev", (data) => {
+			console.log("🚀 ~ updated ~phx:next data:", data);
 		});
 	},
 };
