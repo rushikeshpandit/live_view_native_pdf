@@ -47,13 +47,13 @@ defmodule LiveViewNativePdfWeb.ShowLive.IndexLive do
   @impl Phoenix.LiveView
   def handle_event("previous_page", _param, socket) do
     IO.inspect("previous_page")
-    {:noreply, push_event(socket, "js-prev", %{event: "prev"})}
+    {:noreply, push_event(socket, "prev", %{event: "prev"})}
   end
 
   @impl Phoenix.LiveView
   def handle_event("next_page", _param, socket) do
     IO.inspect("next_page")
-    {:noreply, push_event(socket, "js-next", %{event: "next"})}
+    {:noreply, push_event(socket, "next", %{event: "next"})}
   end
 
   @impl Phoenix.LiveView
